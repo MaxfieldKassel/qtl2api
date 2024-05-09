@@ -415,7 +415,7 @@ validate_annotations <- function(dataset) {
         }
 
         if (!tibble::is_tibble(ds_orig[[annots_field]])) {
-            message("ERROR   : annot_mrna should be a tibble, but found: ", class(ds[[annots_field]]))
+            message("ERROR   : annot_mrna should be a tibble, but found: ", class(ds_orig[[annots_field]]))
         }
 
         annots_orig <- ds_orig[[annots_field]]
@@ -430,7 +430,7 @@ validate_annotations <- function(dataset) {
         }
 
         if (!tibble::is_tibble(ds_orig[[annots_field]])) {
-            message("ERROR   : annot_protein should be a tibble, but found: ", class(ds[[annots_field]]))
+            message("ERROR   : annot_protein should be a tibble, but found: ", class(ds_orig[[annots_field]]))
         }
 
         annots_orig <- ds_orig[[annots_field]]
@@ -445,7 +445,7 @@ validate_annotations <- function(dataset) {
         }
 
         if (!tibble::is_tibble(ds_orig[[annots_field]])) {
-            message("ERROR   : annot_phos should be a tibble, but found: ", class(ds[[annots_field]]))
+            message("ERROR   : annot_phos should be a tibble, but found: ", class(ds_orig[[annots_field]]))
         }
 
         annots_orig <- ds_orig[[annots_field]]
@@ -460,7 +460,7 @@ validate_annotations <- function(dataset) {
         }
 
         if (!tibble::is_tibble(ds_orig[[annots_field]])) {
-            message("ERROR   : annot_phenotype should be a tibble, but found: ", class(ds[[annots_field]]))
+            message("ERROR   : annot_phenotype should be a tibble, but found: ", class(ds_orig[[annots_field]]))
         }
 
         annots_orig <- ds_orig[[annots_field]]
